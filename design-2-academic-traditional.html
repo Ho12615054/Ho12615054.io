@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건양대학교 의료공학대학 - 학술적 디자인</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto+Sans+KR', sans-serif;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif KR', serif;
+        }
+        
+        .academic-border {
+            border: 3px solid #1a365d;
+            position: relative;
+        }
+        
+        .academic-border::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            border: 1px solid #1a365d;
+        }
+        
+        .decorative-line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #1a365d, transparent);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-gray-900 text-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-gray-300">건양대학교</a>
+                    <a href="#" class="hover:text-gray-300">포털</a>
+                    <a href="#" class="hover:text-gray-300">도서관</a>
+                </div>
+                <div class="flex space-x-4">
+                    <span>KOR</span>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-gray-400">ENG</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white border-b-4 border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center space-x-4">
+                    <div class="academic-border p-3 bg-white">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-blue-900 font-bold text-xs">KONYANG</div>
+                                <div class="text-blue-900 font-bold text-lg leading-none">KU</div>
+                                <div class="text-blue-900 text-xs">MEDICAL</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">건양대학교</h1>
+                        <p class="text-lg text-blue-900 font-semibold">의료공학대학</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-900 font-medium border-b-2 border-transparent hover:border-blue-900 pb-1">대학소개</a>
+                    <a href="#departments" class="text-gray-700 hover:text-blue-900 font-medium border-b-2 border-transparent hover:border-blue-900 pb-1">학과안내</a>
+                    <a href="#vision" class="text-gray-700 hover:text-blue-900 font-medium border-b-2 border-transparent hover:border-blue-900 pb-1">교육목표</a>
+                    <a href="#research" class="text-gray-700 hover:text-blue-900 font-medium border-b-2 border-transparent hover:border-blue-900 pb-1">연구</a>
+                    <a href="#admission" class="text-gray-700 hover:text-blue-900 font-medium border-b-2 border-transparent hover:border-blue-900 pb-1">입학</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-900 to-blue-800 text-white py-32">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="decorative-line mb-8 max-w-md mx-auto"></div>
+                <h2 class="text-5xl font-bold mb-6">의료공학대학</h2>
+                <p class="text-2xl mb-4 font-light">College of Medical Engineering</p>
+                <div class="decorative-line mt-8 mb-12 max-w-md mx-auto"></div>
+                <p class="text-xl max-w-3xl mx-auto leading-relaxed font-light">
+                    의학과 공학의 융합을 통한 혁신적 의료기술 개발로<br>
+                    인류의 건강과 복지 증진에 기여하는 전문인력 양성
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section id="vision" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">교육 이념 및 목표</h2>
+                <div class="decorative-line max-w-xs mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="border-4 border-blue-900 p-10 bg-blue-50">
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">교육 이념</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 border-l-4 border-blue-900">
+                            <h4 class="font-bold text-xl mb-3 text-gray-900">진리 탐구</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                의료공학의 학문적 진리를 탐구하고 새로운 지식을 창출하는 연구 중심 교육
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 border-l-4 border-blue-900">
+                            <h4 class="font-bold text-xl mb-3 text-gray-900">덕성 함양</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                환자와 사회를 위한 봉사정신과 윤리의식을 갖춘 인성 교육
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 border-l-4 border-blue-900">
+                            <h4 class="font-bold text-xl mb-3 text-gray-900">실천 역량</h4>
+                            <p class="text-gray-700 leading-relaxed">
+                                이론과 실무를 겸비한 현장 중심의 실용적 전문가 양성
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-4 border-blue-900 p-10 bg-gray-50">
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">비전 2030</h3>
+                    <div class="bg-white p-8 mb-6 text-center border-2 border-blue-900">
+                        <p class="text-2xl font-bold text-blue-900 leading-relaxed">
+                            글로벌 의료공학<br>
+                            교육·연구의 선도대학
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 border border-gray-300">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-gray-900">교육 경쟁력</span>
+                                <span class="text-blue-900 font-bold">국내 Top 5</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 border border-gray-300">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-gray-900">연구 성과</span>
+                                <span class="text-blue-900 font-bold">연 100편 이상</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 border border-gray-300">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-gray-900">취업률</span>
+                                <span class="text-blue-900 font-bold">95% 이상</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 border border-gray-300">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-gray-900">국제화</span>
+                                <span class="text-blue-900 font-bold">30개국 교류</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="bg-blue-900 text-white p-12">
+                <h3 class="text-3xl font-bold text-center mb-12">핵심 가치</h3>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-4xl font-bold">專</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">전문성</h4>
+                        <p class="text-blue-100 text-sm">Professional Excellence</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-4xl font-bold">創</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">창의성</h4>
+                        <p class="text-blue-100 text-sm">Creative Innovation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-4xl font-bold">融</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">융합성</h4>
+                        <p class="text-blue-100 text-sm">Convergence Thinking</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-4xl font-bold">仁</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">인본성</h4>
+                        <p class="text-blue-100 text-sm">Humanity First</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">학과 소개</h2>
+                <div class="decorative-line max-w-xs mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600">6개 학과의 특성화된 교육과정을 통한 전문인력 양성</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- 의공학과 -->
+                <div class="bg-white border-l-8 border-blue-900 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">의공학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                의료기기의 설계, 개발, 평가 및 관리에 필요한 전문지식과 기술을 교육하며, 
+                                생체신호 처리, 의료영상, 의료기기 인증 등의 핵심 분야를 다룹니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-900 text-sm font-medium rounded">의료기기 개발</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-900 text-sm font-medium rounded">생체신호 처리</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-900 text-sm font-medium rounded">의료영상</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-900 text-sm font-medium rounded">의료기기 인증</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-blue-900 text-white font-bold hover:bg-blue-800 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 의료IT공학과 -->
+                <div class="bg-white border-l-8 border-green-700 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">의료IT공학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                의료정보시스템, 헬스케어 빅데이터, 인공지능 의료 등 IT와 의료의 융합 기술을 교육하며, 
+                                차세대 디지털 헬스케어 전문가를 양성합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-100 text-green-900 text-sm font-medium rounded">의료정보시스템</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-900 text-sm font-medium rounded">빅데이터 분석</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-900 text-sm font-medium rounded">AI 의료</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-900 text-sm font-medium rounded">디지털 헬스</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-green-700 text-white font-bold hover:bg-green-600 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 재활보조공학과 -->
+                <div class="bg-white border-l-8 border-purple-700 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">재활보조공학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                재활의료기기, 보조공학기술, 웰니스케어 등을 통해 장애인과 노약자의 삶의 질 향상에 
+                                기여하는 전문가를 양성합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-900 text-sm font-medium rounded">재활 로봇</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-900 text-sm font-medium rounded">보조기기</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-900 text-sm font-medium rounded">웰니스케어</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-900 text-sm font-medium rounded">스마트 헬스</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-purple-700 text-white font-bold hover:bg-purple-600 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 의료신소재학과 -->
+                <div class="bg-white border-l-8 border-orange-700 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">의료신소재학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                생체재료, 나노의료, 조직공학, 3D 바이오프린팅 등 차세대 의료소재 기술을 연구하고 
+                                개발하는 전문인력을 양성합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-900 text-sm font-medium rounded">생체재료</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-900 text-sm font-medium rounded">나노바이오</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-900 text-sm font-medium rounded">조직공학</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-900 text-sm font-medium rounded">바이오프린팅</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-orange-700 text-white font-bold hover:bg-orange-600 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 의료융합학과 -->
+                <div class="bg-white border-l-8 border-teal-700 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">의료융합학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                의료와 공학의 다양한 분야를 융합하여 통합적 문제해결 능력을 갖춘 융복합 인재를 
+                                양성하며, 의료 창업 및 경영 능력도 함께 배양합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-teal-100 text-teal-900 text-sm font-medium rounded">융복합 기술</span>
+                                <span class="px-3 py-1 bg-teal-100 text-teal-900 text-sm font-medium rounded">디지털 헬스</span>
+                                <span class="px-3 py-1 bg-teal-100 text-teal-900 text-sm font-medium rounded">의료 창업</span>
+                                <span class="px-3 py-1 bg-teal-100 text-teal-900 text-sm font-medium rounded">헬스케어 경영</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-teal-700 text-white font-bold hover:bg-teal-600 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 의료로봇학과 -->
+                <div class="bg-white border-l-8 border-red-700 p-8 hover:shadow-xl transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">의료로봇학과</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">
+                                수술로봇, 재활로봇, 케어로봇 등 차세대 의료로봇 기술을 선도하며, 
+                                로봇공학과 의료의 융합을 통한 혁신적 기술 개발을 추구합니다.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-red-100 text-red-900 text-sm font-medium rounded">수술 로봇</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-900 text-sm font-medium rounded">재활 로봇</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-900 text-sm font-medium rounded">케어 로봇</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-900 text-sm font-medium rounded">의료 자동화</span>
+                            </div>
+                        </div>
+                        <div class="md:ml-8">
+                            <button class="px-6 py-3 bg-red-700 text-white font-bold hover:bg-red-600 transition">
+                                상세보기 →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Goals -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">인재상</h2>
+                <div class="decorative-line max-w-xs mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border-4 border-blue-900 p-8 text-center bg-gray-50">
+                    <div class="text-6xl font-bold text-blue-900 mb-4">1</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">전문 지식인</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        의료공학 분야의 깊이 있는 전문지식과 최신 기술을 습득하고 
+                        지속적으로 학습하는 전문가
+                    </p>
+                </div>
+                <div class="border-4 border-blue-900 p-8 text-center bg-gray-50">
+                    <div class="text-6xl font-bold text-blue-900 mb-4">2</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">창의 융합인</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        의학과 공학의 경계를 넘나들며 창의적으로 문제를 해결하는 
+                        융합형 인재
+                    </p>
+                </div>
+                <div class="border-4 border-blue-900 p-8 text-center bg-gray-50">
+                    <div class="text-6xl font-bold text-blue-900 mb-4">3</div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">실천 봉사인</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        환자와 사회를 위한 봉사정신과 윤리의식을 갖추고 
+                        실천하는 인본주의자
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t-4 border-blue-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4 border-b-2 border-blue-900 pb-2">대학 소개</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">학장 인사말</a></li>
+                        <li><a href="#" class="hover:text-white">연혁</a></li>
+                        <li><a href="#" class="hover:text-white">조직도</a></li>
+                        <li><a href="#" class="hover:text-white">찾아오시는 길</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 border-b-2 border-blue-900 pb-2">학과 안내</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">의공학과</a></li>
+                        <li><a href="#" class="hover:text-white">의료IT공학과</a></li>
+                        <li><a href="#" class="hover:text-white">재활보조공학과</a></li>
+                        <li><a href="#" class="hover:text-white">의료신소재학과</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 border-b-2 border-blue-900 pb-2">입학 안내</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">학부 입학</a></li>
+                        <li><a href="#" class="hover:text-white">대학원 입학</a></li>
+                        <li><a href="#" class="hover:text-white">장학제도</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 border-b-2 border-blue-900 pb-2">Contact</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>충남 논산시 대학로 121</li>
+                        <li>건양대학교 의료공학대학</li>
+                        <li>Tel: 041-730-5400</li>
+                        <li>Email: medical@konyang.ac.kr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>Copyright © 2025 Konyang University College of Medical Engineering. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
